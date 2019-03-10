@@ -1,0 +1,41 @@
+/login    :
+  post:
+           description: |
+              登录
+
+              |参数 | 类型 | 描述 | 必选|
+              |-------|------|------|------|
+              |username|string| 用户名| Yes|
+              |pwd|string| 密码| Yes|
+
+           body:
+              application/json:
+                  example: |
+                      {
+                      	"username":"12345678",
+                      	"pwd":"123456"
+                      }
+           responses:
+              200:
+                description: "登录成功"
+                body:
+                    application/json:
+                      example: |
+                        {
+                          "access_token": ".eyJpc3MiOiJodHRwOlwvXC9hcGku92MVwvdXNlclwvbG9naW4iLCJpYXQiOjE1NTA0NzE0ODgsImV4cCI6MTU1MTc2NzQ4OCwibmJmIjoxNTUwNDcxNDg4LCJqdGkiOiJ6M1Vpd2pPNVZqMW4xbmFuIiwic3ViIjo1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.eJC0YBRmCyuPy4LSDI6rg55n6pkqoTpG2ItEwsA55HE",
+                          "token_type": "bearer",
+                          "expires_in": 1296000,
+                        }
+              400:
+                description: "请求失败"
+                body:
+                  application/json:
+                      example : !include ../examples/server_error.json
+              422:
+                description: "请求失败"
+                body:
+                  application/json:
+                      example: |
+                          {
+                            "errors": "用户名必填"
+                          }

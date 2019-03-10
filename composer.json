@@ -10,7 +10,7 @@
         "doctrine/dbal": " ~2.3",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0",
+        "laravel/tinker": "^1.0",
         "tymon/jwt-auth": "1.*@rc"
     },
     "require-dev": {
