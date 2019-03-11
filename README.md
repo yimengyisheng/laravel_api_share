@@ -29,7 +29,7 @@
     
       2.api业务请求头部添加
 
-Authorization: Bearer {access_token}
+      Authorization: Bearer {access_token}
 ```
 * API文档部署
 
@@ -38,7 +38,7 @@ Authorization: Bearer {access_token}
     server{
         listen 80;
         server_name docs.example.com;
-        root /Users/aaron/workspace/php/anchnet/hds/server-background/docs/api;
+        root 项目根目录/docs/api;
         location ~ .*\.(raml)$ {
             add_header Cache-Control no-store;
         }
@@ -48,8 +48,33 @@ Authorization: Bearer {access_token}
 
 ###包含内容
 * 使用jwt做安全验证
+
 * 自定义接口返回异常
+
 * 统一接口返回数据格式
+
+* 自定义分页程序
+
 * 接口文档编写使用raml（含有书写格式示例）
-* 多域名支持
+
+* 多域名调用支持
+
+###laravel的一些功能设置
+
+* 配置.env
+````
+用redis作为缓存驱动：
+需要用composer安装predis
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=redis
+SESSION_DRIVER=redis
+SESSION_LIFETIME=120
+QUEUE_DRIVER=redis
+````
+````
+自定义用户token有效时间
+JWT_TTL=3600
+````
+
 
