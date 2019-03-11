@@ -2,7 +2,7 @@
 基于laravel5.5构建拿来即用的API服务
 
 ### 安装说明
-* git clone
+* git clone https://github.com/yimengyisheng/laravel_api_share.git
 
 * composer install
 
@@ -46,7 +46,8 @@
     }
 ```
 
-### laravel_api_share包含的功能
+### 包含的功能项
+
 * 使用jwt做安全验证
 
 * 自定义接口返回异常
@@ -59,12 +60,10 @@
 
 * 多域名调用支持
 
-### laravel功能设置
+### 功能设置
 
 * 配置.env
 ````
-用redis作为缓存驱动：
-需要用composer安装predis
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=redis
@@ -77,4 +76,11 @@ QUEUE_DRIVER=redis
 JWT_TTL=3600
 ````
 
+```
+laravel日志按天做为文件存储单位
+APP_LOG=daily
+
+```
+### 功能说明
+* 全局函数和常量文件已经定义在app/Helpers目录下
 
