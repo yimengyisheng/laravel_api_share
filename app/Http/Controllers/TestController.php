@@ -55,7 +55,7 @@ class TestController extends Controller
             Log::info ('error', $exception->getResults ());
         }
 //        $aliSms = new AliSms();
-//        $response = $aliSms->sendSms('18595651098', 'SMS_160305812', ['cusname'=> '1203','bizname'=>'666','reason'=>'666']);
+//        $response = $aliSms->sendSms('phone', 'SMS_160305912', ['cusname'=> '1203','bizname'=>'666','reason'=>'666']);
 //        dd($response);
 //        return object_get ($response,'Code');
 //
@@ -71,9 +71,9 @@ class TestController extends Controller
 //                ->method('POST')
 //                ->options([
 //                    'query' => [
-//                        'PhoneNumbers' => '18595651098',
-//                        'SignName' => '汉薇商城',
-//                        'TemplateCode' => 'SMS_120866313',
+//                        'PhoneNumbers' => '',
+//                        'SignName' => '',
+//                        'TemplateCode' => '',
 //                        'TemplateParam' => '',
 //                    ],
 //                ])
