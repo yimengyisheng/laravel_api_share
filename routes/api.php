@@ -13,7 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-$middleware=['jwt.auth','api'];
+//$middleware=['jwt.auth','api'];
+$middleware=['api'];
 //无规则验证路由
 Route::group(['prefix' => 'auth'], function () {
     Route::post('login', 'AuthController@login')->name('login');//登录

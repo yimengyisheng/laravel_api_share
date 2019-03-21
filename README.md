@@ -22,7 +22,7 @@
 ```
       1.POST www.example.com/auth/login 获取access_token示例
         {
-            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiYWRtaW4iOnRydWV9.TJVA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ",
+            "access_token": "eyJA95OrM7E2cBab30RMHrHDcEfxjoYZgeFONFh7HgQ",
             "token_type": "bearer",
             "expires_in": 3600
         }
@@ -59,6 +59,8 @@
 * 接口文档编写使用raml（含有书写格式示例）
 
 * 多域名调用支持
+
+* 发送短信多平台支持
 
 ### 功能设置
 

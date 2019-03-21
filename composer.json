@@ -6,12 +6,18 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "alibabacloud/client": "^1.0",
         "barryvdh/laravel-ide-helper": "^2.6",
+        "calebporzio/awesome-helpers": "^2.1",
         "doctrine/dbal": " ~2.3",
         "fideloper/proxy": "~3.3",
+        "guzzlehttp/guzzle": "~6.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "^1.0",
+        "mrgoon/aliyun-sms": "dev-master",
+        "overtrue/easy-sms": "^1.1",
         "predis/predis": "^1.1",
+        "toplan/laravel-sms": "~2.6",
         "tymon/jwt-auth": "1.*@rc"
     },
     "require-dev": {
