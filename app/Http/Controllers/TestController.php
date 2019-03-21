@@ -46,12 +46,11 @@ class TestController extends Controller
             $easySms = new EasySms($config);
 
             $easySms->send (18595664108, [
-                'template' => 'SMS_16085543',
+                'template' => '',
                 'data' => [
                     'vercode' => 6379
                 ],
             ]);
-            return 888;
         } catch (Exception $exception) {
             Log::info ('error', $exception->getResults ());
         }
