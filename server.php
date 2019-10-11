@@ -1,5 +1,5 @@
 <?php
-
+//测试tag使用规则
 /**
  * Laravel - A PHP Framework For Web Artisans
  *
