@@ -1,8 +1,4 @@
 <?php
-/**
- * User: Wujiang <wuj@51idc.com>
- * Date: 2018/8/3 11:13
- */
 
 namespace App\Http\Controllers;
 
